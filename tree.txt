@@ -1,0 +1,56 @@
+.
+├── book.html
+├── init.sh
+├── tree.txt
+└── 初刻拍案驚奇
+    ├── audio
+    ├── converted
+    ├── cover
+    ├── coverparameters.txt
+    ├── lit.zip
+    ├── original
+    │   ├── 3670.html
+    │   ├── 3671.html
+    │   ├── 3672.html
+    │   ├── 3674.html
+    │   ├── 3675.html
+    │   ├── 3676.html
+    │   ├── 3677.html
+    │   ├── 3678.html
+    │   ├── 3679.html
+    │   ├── 3680.html
+    │   ├── 3681.html
+    │   ├── 3682.html
+    │   ├── 3683.html
+    │   ├── 3684.html
+    │   ├── 3685.html
+    │   ├── 3686.html
+    │   ├── 3687.html
+    │   ├── 3688.html
+    │   ├── 3689.html
+    │   ├── 3690.html
+    │   ├── 3691.html
+    │   ├── 3692.html
+    │   ├── 3693.html
+    │   ├── 3694.html
+    │   ├── 3695.html
+    │   ├── 3696.html
+    │   ├── 3697.html
+    │   ├── 3698.html
+    │   ├── 3699.html
+    │   ├── 3700.html
+    │   ├── 3701.html
+    │   ├── 3702.html
+    │   ├── 3703.html
+    │   ├── 3704.html
+    │   ├── 3705.html
+    │   ├── 3706.html
+    │   ├── 3707.html
+    │   ├── 3708.html
+    │   ├── 3709.html
+    │   ├── 9489.html
+    │   ├── index.html
+    │   └── readme.html
+    └── youtube
+
+6 directories, 47 files

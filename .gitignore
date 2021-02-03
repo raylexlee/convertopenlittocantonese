@@ -1,0 +1,10 @@
+node_modules/
+temp/
+cover/
+audio/
+youtube/
+key
+region
+log*
+*.wav
+packages-microsoft-prod.deb
