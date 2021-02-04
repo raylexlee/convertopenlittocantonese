@@ -17,5 +17,6 @@ cd original
 unzip ../lit.zip
 cd ..
 grep -e 'id=[0-9]*">' ../book.html | sed 's/.*id=\([0-9]*\)">\([^<]*\)<[^>]*>\([^<]*\)<.*/\1 \2 \3/' | nl -n rz -w 3 -s " $TITLE " > coverparameters.txt
+MISSING_XCANGJIE_IN_XTEXT=$(node ../checkxfonts.js)
 LAST_CHAPTER=$(node ../gen2spx.js)
 echo $LAST_CHAPTER

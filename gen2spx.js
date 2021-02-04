@@ -17,13 +17,20 @@ const ssml = (title, body) => `<speak version="1.0" xmlns="http://www.w3.org/200
 const subst = `<break time="100ms" />`;
 const regex = /<br>/mg;
 const pattern = /^.*color=navy>(.*)<\/br>(.*)<\/font><\/h4>\r\n\t\t\t(.*)$/m;
+const xpatt = k => `<[^<]+${k}\.BMP[^>]+>`;
 const Chapters = fs.readFileSync('./coverparameters.txt', {encoding:'utf8', flag:'r'}).replace(/\n+$/, "").split('\n');
+const xcangjie = JSON.parse(fs.readFileSync('./xcangjie.json'));
+const x = JSON.parse(fs.readFileSync('../xtext.json'));
 Chapters.forEach(Chapter => {
   let chapter, book, origin, rest;
   [chapter, book, origin, ...rest] = Chapter.split(' ');
   const rawdata = fs.readFileSync(`./original/${origin}.html`, {encoding:'utf8', flag:'r'});
   const m = rawdata.match(pattern);
-  const paras = m[3].split(regex)
+  let paras = m[3];
+  Object.keys(xcangjie).forEach(k => {
+    paras = paras.replace(new RegExp(xpatt(k), 'gm'), x[k]);
+  });
+  paras = paras.split(regex);
   paras.pop();
   paras.pop();                      
   const titleVoice = voiceText(voiceName[2], `${m[1]}${subst}${m[2]}`);
