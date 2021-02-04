@@ -20,6 +20,11 @@ const pattern = /^.*color=navy>(.*)<\/br>(.*)<\/font><\/h4>\r\n\t\t\t(.*)$/m;
 const xpatt = k => `<[^<]+${k}\.BMP[^>]+>`;
 const Chapters = fs.readFileSync('./coverparameters.txt', {encoding:'utf8', flag:'r'}).replace(/\n+$/, "").split('\n');
 const xcangjie = JSON.parse(fs.readFileSync('./xcangjie.json'));
+const xPattern = {};
+const xKeys = Object.keys(xcangjie);
+xKeys.forEach(k => { 
+  xPattern[k] = new RegExp(xpatt(k), 'gm'); 
+});
 const x = JSON.parse(fs.readFileSync('../xtext.json'));
 Chapters.forEach(Chapter => {
   let chapter, book, origin, rest;
@@ -27,8 +32,8 @@ Chapters.forEach(Chapter => {
   const rawdata = fs.readFileSync(`./original/${origin}.html`, {encoding:'utf8', flag:'r'});
   const m = rawdata.match(pattern);
   let paras = m[3];
-  Object.keys(xcangjie).forEach(k => {
-    paras = paras.replace(new RegExp(xpatt(k), 'gm'), x[k]);
+  xKeys.filter(k => chapter in xcangjie[k]).forEach(k => {
+    paras = paras.replace(xPattern[k], x[k]);
   });
   paras = paras.split(regex);
   paras.pop();
