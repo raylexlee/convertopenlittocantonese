@@ -1,0 +1,21 @@
+#!/bin/bash
+CHAPTER=${1?"missing: the three digit 001-120"}
+[[ $PATH =~ $HOME/spx  ]] || PATH=$HOME/spx:$PATH
+ORIG_DIR=$(pwd)
+NOZERO=$(echo $CHAPTER | sed 's/^0*//')
+TITLE=$(grep $CHAPTER ../titles.txt | tr -d [:digit:])
+DATE=$(date +%F)
+rm *wav
+rm *log
+for SSML in $(ls ../spx/$CHAPTER\_?.ssml)
+  do
+    PART=$(echo $SSML | tr -d spx/.ssml)
+    spx synthesize --file $SSML --audio output $PART.wav  &
+    wait
+  done
+sox $CHAPTER\_?.wav $CHAPTER.wav
+ffmpeg -i $CHAPTER.wav -codec:a libmp3lame -qscale:a 9 $CHAPTER.mp3    
+mid3v2 -a "李伯元" -t "$TITLE" -A "【官場現形記】全本廣東話原文照讀" -c "版本：光緒卅二（１９０６）年正月世界繁華報館出版單行本，分訂 線裝卅冊。" -g "101" -y $DATE -T "$CHAPTER/060" $CHAPTER.mp3
+ls -l
+mid3v2 $CHAPTER.mp3
+sleep 2m

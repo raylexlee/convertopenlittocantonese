@@ -15,8 +15,8 @@ const ssml = (title, body) => `<speak version="1.0" xmlns="http://www.w3.org/200
 </speak>
 `;
 const subst = `<break time="100ms" />`;
-const regex = /<br>/mg;
-const pattern = /^.*color=navy>(.*)<\/br>(.*)<\/font><\/h4>\r\n\t\t\t(.*)$/m;
+const regex = /<br.{0,2}>/mg;
+const pattern = /<\/font><\/h4>(.*)<hr>/mus;
 const xpatt = k => `<[^<]+${k}\.BMP[^>]+>`;
 const Chapters = fs.readFileSync('./coverparameters.txt', {encoding:'utf8', flag:'r'}).replace(/\n+$/, "").split('\n');
 const xcangjie = JSON.parse(fs.readFileSync('./xcangjie.json'));
@@ -27,18 +27,18 @@ xKeys.forEach(k => {
 });
 const x = JSON.parse(fs.readFileSync('../xtext.json'));
 Chapters.forEach(Chapter => {
-  let chapter, book, origin, rest;
-  [chapter, book, origin, ...rest] = Chapter.split(' ');
+  let chapter, book, origin, mone, mtwo;
+  [chapter, book, origin, mone, mtwo] = Chapter.split(' ');
   const rawdata = fs.readFileSync(`./original/${origin}.html`, {encoding:'utf8', flag:'r'});
   const m = rawdata.match(pattern);
-  let paras = m[3];
+  let paras = m[1];
   xKeys.filter(k => chapter in xcangjie[k]).forEach(k => {
     paras = paras.replace(xPattern[k], x[k]);
   });
   paras = paras.split(regex);
   paras.pop();
   paras.pop();                      
-  const titleVoice = voiceText(voiceName[2], `${m[1]}${subst}${m[2]}`);
+  const titleVoice = voiceText(voiceName[2], `${mone}${subst}${mtwo}`);
   let j = 0;
   let accPara = '';
   let cnt = 0;

@@ -1,0 +1,8 @@
+#!/bin/bash
+LAST_CHAPTER=$(grep [0-9] last_chapter.txt)
+CHAPTER=${1?"missing: the three digit 001-$LAST_CHAPTER"}
+if [[ -e cover/$CHAPTER.jpg ]]; then
+  rm cover/$CHAPTER.jpg
+fi  
+PARAM=$(grep ^$CHAPTER coverparameters.txt | sed 's/　　//' | sed 's/　/\ /')
+../genCoverPicture.py $PARAM

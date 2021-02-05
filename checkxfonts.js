@@ -3,7 +3,7 @@
 */
 const fs = require('fs');
 const regex = /<br>/mg;
-const pattern = /^.*color=navy>(.*)<\/br>(.*)<\/font><\/h4>\r\n\t\t\t(.*)$/m;
+const pattern = /<\/font><\/h4>(.*)<hr>/mus;
 const xcangjie = {};
 const Chapters = fs.readFileSync('./coverparameters.txt', {encoding:'utf8', flag:'r'}).replace(/\n+$/, "").split('\n');
 Chapters.forEach(Chapter => {
@@ -11,10 +11,10 @@ Chapters.forEach(Chapter => {
   [chapter, book, origin, ...rest] = Chapter.split(' ');
   const rawdata = fs.readFileSync(`./original/${origin}.html`, {encoding:'utf8', flag:'r'});
   const m = rawdata.match(pattern);
-  const c = m[3].match(/[A-Z]*\.B/mg);
+  const c = m[1].match(/\/[A-Z]+\.B/mg);
   if (c === null) return;
   c.forEach(e => {
-    const cc = e.substr(0, e.length - 2);
+    const cc = e.substr(1, e.length - 3);
     if (cc in xcangjie) {
       if (chapter in xcangjie[cc]) { 
         xcangjie[cc][chapter]++;

@@ -1,0 +1,28 @@
+#!/bin/bash
+LAST_CHAPTER=$(grep [0-9] ../last_chapter.txt)
+CHAPTER=${1?"missing: the three digit 001-$LAST_CHAPTER"}
+[[ $PATH =~ $HOME/spx  ]] || PATH=$HOME/spx:$PATH
+ORIG_DIR=$(pwd)
+AUTHOR=$(cat ../author.txt)
+while [ $CHAPTER -le $LAST_CHAPTER ]
+do
+NOZERO=$(echo $CHAPTER | sed 's/^0*//')
+TITLE=$(grep ^$CHAPTER ../coverparameters.txt | awk '{print $4$5;}')
+BOOK=$(grep ^$CHAPTER ../coverparameters.txt | awk '{print $2;}')
+DATE=$(date +%F)
+rm *wav
+rm *log
+for SSML in $(ls ../spx/$CHAPTER\_?.ssml)
+  do
+    PART=$(echo $SSML | tr -d spx/.ssml)
+    spx synthesize --file $SSML --audio output $PART.wav  &
+    wait
+  done
+sox $CHAPTER\_?.wav $CHAPTER.wav
+ffmpeg -i $CHAPTER.wav -codec:a libmp3lame -qscale:a 9 $CHAPTER.mp3    
+mid3v2 -a "$AUTHOR" -t "$TITLE" -A "【$BOOK】全本廣東話原文照讀" -g "101" -y $DATE -T "$CHAPTER/$LAST_CHAPTER" $CHAPTER.mp3
+ls -l
+mid3v2 $CHAPTER.mp3
+sleep 2m
+CHAPTER=$(printf "%03d" `expr $CHAPTER + 1`)
+done
