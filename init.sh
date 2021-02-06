@@ -16,6 +16,7 @@ mkdir youtube
 curl -o lit.zip $BOOKZIP_URL
 cd original
 unzip ../lit.zip
+rm ../lit.zip
 echo $(grep "作者：<br>" readme.html | sed 's/.*作者：<br>　　\([^，]*\).*/\1/') > ../author.txt
 cd ..
 grep -e 'id=[0-9]*">.*</br>' ../book.html | sed 's/.*id=\([0-9]*\)">\([^<]*\)<[^>]*>\([^<]*\)<.*/\1 \2 \3/' | nl -n rz -w 3 -s " $TITLE " > coverparameters.txt

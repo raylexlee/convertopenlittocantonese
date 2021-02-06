@@ -1,9 +1,0 @@
-<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="zh-HK">
-    
-    <voice name="zh-HK-HiuMaanNeural">
-        <break time="100ms" />
-　　<break time="100ms" />
-　　<break time="100ms" />
-　　
-    </voice>
-</speak>

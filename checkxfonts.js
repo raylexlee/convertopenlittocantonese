@@ -11,7 +11,7 @@ Chapters.forEach(Chapter => {
   [chapter, book, origin, ...rest] = Chapter.split(' ');
   const rawdata = fs.readFileSync(`./original/${origin}.html`, {encoding:'utf8', flag:'r'});
   const m = rawdata.match(pattern);
-  const c = m[1].match(/\/[A-Z]+\.B/mg);
+  const c = m[1].match(/\/[A-Z]+[A-Z1-9]\.B/mg);
   if (c === null) return;
   c.forEach(e => {
     const cc = e.substr(1, e.length - 3);
@@ -29,6 +29,9 @@ Chapters.forEach(Chapter => {
   });
 });
 fs.writeFileSync('./xcangjie.json', JSON.stringify(xcangjie));
-const x = JSON.parse(fs.readFileSync('../xtext.json'));
-const xk = Object.keys(xcangjie).filter(k => !(k in x));
+const xm = JSON.parse(fs.readFileSync('../xMasterText.json'));
+const xt = {}
+Object.keys(xcangjie).forEach(k => { xt[k] = (k in xm) ? xm[k] : ""; });
+fs.writeFileSync('./xtext.json', JSON.stringify(xt))
+const xk = Object.keys(xt).filter(k => xt[k] === '');
 if (xk.length >= 1) console.log(xk);
