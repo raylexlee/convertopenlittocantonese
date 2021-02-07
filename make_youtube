@@ -1,0 +1,9 @@
+#!/bin/bash
+LAST_CHAPTER=$(grep [0-9] ./last_chapter.txt)
+CHAPTER=${1?"missing: the three digit 001-$LAST_CHAPTER"}
+TITLE=$(grep ^$CHAPTER ./coverparameters.txt | awk '{print $4$5;}')
+BOOK=$(grep ^$CHAPTER ./coverparameters.txt | awk '{print $2;}')
+IMAGE=./cover/$CHAPTER.jpg
+AUDIO=./audio/$CHAPTER.mp3
+VIDEO=./youtube/$CHAPTER　$BOOK　$TITLE　人工智能　廣東話朗讀.mkv
+ffmpeg -loop 1 -framerate 1 -i $IMAGE -i $AUDIO -c:v libx264 -preset veryslow -crf 0 -c:a copy -shortest $VIDEO
