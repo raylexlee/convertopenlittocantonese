@@ -18,6 +18,7 @@ cd original
 unzip ../lit.zip
 rm ../lit.zip
 echo $(grep "作者：<br>" readme.html | sed 's/.*作者：<br>　　\([^，]*\).*/\1/') > ../author.txt
+vim ../author.txt
 cd ..
 grep -e 'id=[0-9]*">.*</br>' ../book.html | sed 's/.*id=\([0-9]*\)">\([^<]*\)<[^>]*>\([^<]*\)<.*/\1 \2 \3/' | nl -n rz -w 3 -s " $TITLE " > coverparameters.txt
 MISSING_XCANGJIE_IN_XTEXT=$(node ../checkxfonts.js)
