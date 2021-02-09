@@ -22,7 +22,9 @@ function CopyCodes() {
   Object.keys(xtext).forEach(k => {
     xtext[k] = document.getElementById(k).value;
   });
-  textHint.value = `echo ${JSON.stringify(xtext).replace(/[{}"]/gm, '\\$&')}>xtext.json`;
+  textHint.value = `echo ${JSON.stringify(xtext).replace(/[{}"]/gm, '\\$&')}>xtext.json
+node addxtext2master.js
+`;
   const r = document.createRange();
   r.selectNode(textHint);
   window.getSelection().removeAllRanges();
