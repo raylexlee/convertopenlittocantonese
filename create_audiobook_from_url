@@ -10,9 +10,9 @@ mkdir $TITLE
 cd $TITLE
 mkdir original
 mkdir spx
-mkdir cover
+#mkdir cover
 mkdir audio
-mkdir youtube
+#mkdir youtube
 curl -o lit.zip $BOOKZIP_URL
 cd original
 unzip ../lit.zip
@@ -30,7 +30,7 @@ if [[ -n $MISSING_XCANGJIE_IN_XTEXT ]]; then
    exit 1
 fi   
 echo $(node ../gen2spx.js) > last_chapter.txt
-../all_make_cover 001
+#../all_make_cover 001
 cd audio
 cp $HOME/my-ms-translator/officialdom/temp/key .
 cp $HOME/my-ms-translator/officialdom/temp/region .
@@ -40,4 +40,5 @@ rm *log
 rm key
 rm region
 cd ..
-../all_make_youtube 001
+#../all_make_youtube 001
+$HOME/send2hanley
