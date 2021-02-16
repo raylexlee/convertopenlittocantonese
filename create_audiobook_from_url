@@ -4,7 +4,7 @@ rm book.html
 fi
 BOOK_URL=${1?"missing link from http://open-lit.com"}
 curl -o book.html $BOOK_URL
-TITLE=$(grep html版 book.html | sed 's/^.*blank">\(.*\)<\/a>.*$/\1/')
+TITLE=$(grep html版 book.html | sed 's/^.*blank">\(.*\)<\/a>.*$/\1/' | tr -d [:space:])
 BOOKZIP_URL=$(grep 下載本書html book.html | sed 's/^.*href="\([^"]*\)".*$/\1/')
 mkdir $TITLE
 cd $TITLE
