@@ -4,13 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>開放文學 - 戲中戲</title>
-	<meta name="description" content="本網是一個開放式的資料庫,歡迎讀者以宏揚我中華文化為宗旨在原作品的基礎上,去蕪存菁,以使發揚光大。">
-	<meta name="author" content="朱邦復工作室">
-
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <title>戲中戲 - 第一回　譚楚玉遠游吳越　劉藐姑屈志梨園</title>
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
 <script>
 var _hmt = _hmt || [];
 (function() {
@@ -20,44 +15,13 @@ var _hmt = _hmt || [];
   s.parentNode.insertBefore(hm, s);
 })();
 </script>
-<style type="text/css">
-#right_Article{overflow-y:auto;}
-#left_Article{overflow-y:auto;}
-</style> 
-
   </head>
   <body>
+
     <div class="container-fluid">
 	<div class="row">
-		<div class="col-lg-4">
-			　<h4><b><a href="./html/lit/88" target="_blank">戲中戲</a></b>(<--html版)</h4>
-<h5><a href="http://open-lit.com/html/GetFile.php?getType=lit&getId=88" target="_blank"><font color="teal">下載本書html</font></a></h5>
-			<div class="list-unstyled" id="left_Article">
-<li><a href="bid=88&id=readme">本書說明</a></li><li>
-<a href="bid=88&id=3582">第一回</br>　　譚楚玉遠游吳越　劉藐姑屈志梨園</a>
-</li><li>
-<a href="bid=88&id=3583">第二回</br>　　傾城貌風前露秀　概世才戲場安身</a>
-</li><li>
-<a href="bid=88&id=3584">第三回</br>　　定姻緣曲詞傳簡　改正生戲房調情</a>
-</li><li>
-<a href="bid=88&id=3585">第四回</br>　　一鄉人共尊萬貫　用千金強圖藐姑</a>
-</li><li>
-<a href="bid=88&id=3586">第五回</br>　　劉絳仙將身代女　錢二衙巧說情人</a>
-</li><li>
-<a href="bid=88&id=3587">第六回</br>　　賴婚姻堂前巧辯　受財禮誓不回心</a>
-</li><li>
-<a href="bid=88&id=3588">第七回</br>　　借戲文臺前辱罵　守節義夫婦偕亡</a>
-</li>			</div>
-			<h5 class="text-success"><b>辭典</b>：</h5>
-			<div id="left_search">
-			方法：用鼠標 [左鍵] 框選取字詞後鬆開即可。
-			</div>
-
-		</div>
-
-		<div class="col-lg-8">
-			<div id="right_Article">
-						<h4><font color=navy>第一回</br>　　　　　譚楚玉遠游吳越　劉藐姑屈志梨園</font></h4>
+		<div class="col-md-12">
+			<h4><font color=navy>第一回</br>　　譚楚玉遠游吳越　劉藐姑屈志梨園</font></h4>
 			　　詩曰：<br />
 　　　　無事年來操不律，古今到處搜奇跡。<br />
 　　　　戲在戲中尋不出，教人枉費探求力。<br />
@@ -80,104 +44,15 @@ var _hmt = _hmt || [];
 　　　　饒伊擅盡當場巧，究竟原非婦所宜。<br />
 <br />
 　　要知後事，且聽下回分解。<br />
-　　			</div>
-
+　　
+<hr>
+<h4>返回 <a href="http://open-lit.com">開放文學</a></h4>
 		</div>
-
 	</div>
 </div>
-	<script src="js/tether.min.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-<script type="text/javascript">
-
-
-$(function(){
-
-$("#right_Article").mouseup(function(){
-
-  var r = "";
-  if(document.selection){
-	r = document.selection.createRange().text;
-  } else if (window.getSelection()) {
-	r = window.getSelection();
-  }
-
-	if(r == ""){
-		return;
-	}
-	var height = $(window).height();
-
-	$.ajax({
-		type:"POST",
-		url:"search_dic.php",
-		data:"word=" + r + "&height=" + height,
-
-		success: function(data){
-		    $('#left_search').html(data);
-			},
-		error: function(data){
-		    $('#left_search').html('查不到');
-			}
-	});
-
-});
-	
-$('#left_Article a').click(function() {
-	$.ajax({
-		type:"POST",
-		url:"GETbook.php",
-		data:$(this).attr("href"),
-
-		success: function(data){
-		    $('#right_Article').html(data);
-			$("#right_Article").animate({scrollTop:0}, 100);
-			},
-		error: function(data){
-		    $('#right_Article').html(data);
-			}
-	});
-	
-	return false;
-  });
-});
-
-	function initSize() {
-		var width = $(window).width();
-		var height = $(window).height();
-
-		$('#left_Article').width(width*0.32);
-		$('#right_Article').width(width*0.64);
-		$('#left_Article').height(height*0.6);
-		$('#right_Article').height(height*0.97);
-
-		$('#left_search').width(width*0.32);
-//		$('#left_search').height(height*0.36);
-
-	}
-
-	$(window).resize(function () {
-		initSize();
-	});
-
-		var width = $(window).width();
-		var height = $(window).height();
-
-		$('#left_Article').width(width*0.32);
-		$('#right_Article').width(width*0.65);
-		$('#left_Article').height(height*0.6);
-		$('#right_Article').height(height*0.97);
-
-		$('#left_search').width(width*0.32);
-//		$('#left_search').height(height*0.36);
-
-</script>
 
 <div class="text-center text-primary">
-<p class="mb-1">&copy; 2021 <a href="http://cbflabs.com" target="_blank">朱邦復工作室<a></p>
-</div>
-<div class="hidden text-center">
+
 <!-- Start of StatCounter Code for Default Guide -->
 <script type="text/javascript">
 var sc_project=10644203; 
@@ -194,10 +69,8 @@ href="http://statcounter.com/" target="_blank"><img
 class="statcounter"
 src="http://c.statcounter.com/10644203/0/41ef277d/0/"
 alt="free web stats"></a></div></noscript>
-<a href="http://statcounter.com/p10644203/?guest=1" target="_blank">訪問統計</a>
 <!-- End of StatCounter Code for Default Guide -->
+<a href="http://statcounter.com/p10644203/?guest=1" target="_blank">訪問統計</a>
 </div>
-
-
   </body>
 </html>
