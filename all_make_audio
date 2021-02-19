@@ -23,6 +23,6 @@ ffmpeg -i $CHAPTER.wav -codec:a libmp3lame -qscale:a 9 $CHAPTER.mp3
 mid3v2 -a "$AUTHOR" -t "$TITLE" -A "【$BOOK】全本廣東話原文照讀" -g "101" -y $DATE -T "$CHAPTER/$LAST_CHAPTER" $CHAPTER.mp3
 ls -l
 mid3v2 $CHAPTER.mp3
-sleep 2m
+sleep 1m
 CHAPTER=$(printf "%03d" `expr $CHAPTER + 1`)
 done
