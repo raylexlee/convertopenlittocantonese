@@ -10,13 +10,13 @@ BOOK=$(grep ^$CHAPTER ../coverparameters.txt | awk '{print $2;}')
 DATE=$(date +%F)
 rm *wav
 rm *log
-for SSML in $(ls ../spx/$CHAPTER\_?.ssml)
+for SSML in $(ls ../spx/$CHAPTER\_???.ssml)
   do
     PART=$(echo $SSML | tr -d spx/.ssml)
     spx synthesize --file $SSML --audio output $PART.wav  &
     wait
   done
-sox $CHAPTER\_?.wav $CHAPTER.wav
+sox $CHAPTER\_???.wav $CHAPTER.wav
 ffmpeg -i $CHAPTER.wav -codec:a libmp3lame -qscale:a 9 $CHAPTER.mp3    
 mid3v2 -a "$AUTHOR" -t "$TITLE" -A "【$BOOK】全本廣東話原文照讀" -g "101" -y $DATE -T "$CHAPTER/$LAST_CHAPTER" $CHAPTER.mp3
 ls -l

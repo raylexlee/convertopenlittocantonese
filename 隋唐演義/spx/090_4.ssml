@@ -1,0 +1,6 @@
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="zh-HK">
+    
+    <voice name="zh-HK-WanLungNeural">
+        <break time="100ms" />　　戰所不宜戰，我心先自餒。辱身更辱國，千載有餘悔。<break time="100ms" />　　這一場喪師，非同小可。此信報到京師，吃驚不小。正是：<break time="100ms" />　　將軍失利邊疆上，天子驚心宮禁中。<break time="100ms" />　　未知後事如何，且聽下回分解。
+    </voice>
+</speak>

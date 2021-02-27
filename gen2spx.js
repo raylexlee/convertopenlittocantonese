@@ -47,7 +47,7 @@ Chapters.forEach(Chapter => {
       j++;
       const bodyVoice =  voiceText(voiceName[1], accPara);
       const title = (j === 1) ? titleVoice : '';
-      fs.writeFileSync(`./spx/${chapter}_${j}.ssml`, ssml(title, bodyVoice));
+      fs.writeFileSync(`./spx/${chapter}_${j.toString().padStart(3,'0')}.ssml`, ssml(title, bodyVoice));
       cnt = 0;
       accPara = '';
     }
@@ -59,7 +59,7 @@ Chapters.forEach(Chapter => {
       j++;
       const bodyVoice =  voiceText(voiceName[1], accPara);
       const title = (j === 1) ? titleVoice : '';
-      fs.writeFileSync(`./spx/${chapter}_${j}.ssml`, ssml(title, bodyVoice));
+      fs.writeFileSync(`./spx/${chapter}_${j.toString().padStart(3,'0')}.ssml`, ssml(title, bodyVoice));
   }
 });
 const LastChapter = Chapters.pop();  
