@@ -1,0 +1,6 @@
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="zh-HK">
+    
+    <voice name="zh-HK-WanLungNeural">
+        <break time="100ms" />　　法吏拘文墨，枉效書生忱。<break time="100ms" />　　寧知俠烈士，一死無沉吟！<break time="100ms" />　　彼婦激餘風，三年蓄意深。<break time="100ms" />　　一朝及其期，地下遂相尋。<break time="100ms" />　　似此孝與烈，堪為薄俗箴。
+    </voice>
+</speak>
