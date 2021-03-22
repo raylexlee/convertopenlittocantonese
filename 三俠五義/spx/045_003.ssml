@@ -1,0 +1,6 @@
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="zh-HK">
+    
+    <voice name="zh-HK-WanLungNeural">
+        <break time="100ms" />　　不知盧方來此為了何事，且聽下回分解。
+    </voice>
+</speak>
