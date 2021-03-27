@@ -4,8 +4,10 @@
    Save : 001_?.ssml 002_?.ssml ... 060_?.ssml in sub-directory spx (e.g. fiction has 60 chap
    Ouput the last chapter 3 digit number to standard output 
 */
+const StandardVoice = ['zh-HK-TracyRUS',  'zh-HK-Danny', 'zh-HK-TracyRUS' ];
+const Neuralvoice = ["zh-HK-HiuMaanNeural", "zh-HK-WanLungNeural", "zh-HK-HiuGaaiNeural" ];
 const fs = require('fs');
-const voiceName = ["zh-HK-HiuMaanNeural", "zh-HK-WanLungNeural", "zh-HK-HiuGaaiNeural" ];
+const voiceName = StandardVoice;
 const voiceText = (voice, text) => `<voice name="${voice}">
         ${text}
     </voice>`;
