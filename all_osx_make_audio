@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+LAST_CHAPTER=$(grep [0-9] ../last_chapter.txt)
+CHAPTER=${1?"missing: the three digit 001-$LAST_CHAPTER"}
+ORIG_DIR=$(pwd)
+AUTHOR=$(cat ../author.txt)
+while [ $CHAPTER -le $LAST_CHAPTER ]
+do
+VAR=$(grep ^$CHAPTER ../coverparameters.txt)
+if [ -n "$VAR" ]; then 
+TITLE=$(echo $VAR | awk '{print $4$5;}')
+BOOK=$(pwd | tr -d [A-Za-z]/)
+DATE=$(date +%F)
+say -r 30 -f ../$CHAPTER.txt -o $CHAPTER.aiff
+ffmpeg -hide_banner -i $CHAPTER.aiff -codec:a libmp3lame -qscale:a 9 -metadata artist="$AUTHOR" -metadata title="$TITLE" -metadata album="【$BOOK】全本廣東話原文照讀" -metadata genre="101"  -metadata date=$DATE  -metadata track="$CHAPTER/$LAST_CHAPTER" $CHAPTER.mp3
+rm $CHAPTER.aiff
+ls -l
+fi
+CHAPTER=$(printf "%03d" `expr $CHAPTER + 1`)
+done

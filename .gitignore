@@ -10,3 +10,4 @@ region
 log*
 *.wav
 packages-microsoft-prod.deb
+book.html
