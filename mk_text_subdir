@@ -1,0 +1,18 @@
+#!/bin/bash
+BOOK=${1?"missing book name"}
+if [[ -d $BOOK ]]; then
+cd $BOOK
+else
+echo the folder $BOOK does not exist!
+exit 1
+fi
+if [[ -d text ]]; then :; else  
+  mkdir text
+fi  
+node ../gen2txt.js
+awk '{printf("%s %s%s\n", $1, $4,$5);}' < coverparameters.txt > text/coverparameters.txt
+$HOME/text2data
+$HOME/text2mini
+$HOME/text2raylexdebian
+$HOME/text2hanley
+
