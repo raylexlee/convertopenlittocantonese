@@ -1,0 +1,26 @@
+000 本書說明 file:///home/raylex/convertopenlittocantonese/%E6%83%85%E5%8F%B2%E9%A1%9E%E7%95%A5/original/readme.html
+001 情史序 file:///home/raylex/convertopenlittocantonese/%E6%83%85%E5%8F%B2%E9%A1%9E%E7%95%A5/original/13096.html
+002 第一卷　　情貞類 file:///home/raylex/convertopenlittocantonese/%E6%83%85%E5%8F%B2%E9%A1%9E%E7%95%A5/original/13097.html
+003 第二卷　　情緣類 file:///home/raylex/convertopenlittocantonese/%E6%83%85%E5%8F%B2%E9%A1%9E%E7%95%A5/original/13098.html
+004 第三卷　　情私類 file:///home/raylex/convertopenlittocantonese/%E6%83%85%E5%8F%B2%E9%A1%9E%E7%95%A5/original/13099.html
+005 第四卷　　情俠類 file:///home/raylex/convertopenlittocantonese/%E6%83%85%E5%8F%B2%E9%A1%9E%E7%95%A5/original/13100.html
+006 第五卷　　情豪類 file:///home/raylex/convertopenlittocantonese/%E6%83%85%E5%8F%B2%E9%A1%9E%E7%95%A5/original/13101.html
+007 第六卷　　情愛類 file:///home/raylex/convertopenlittocantonese/%E6%83%85%E5%8F%B2%E9%A1%9E%E7%95%A5/original/13102.html
+008 第七卷　　情癡類 file:///home/raylex/convertopenlittocantonese/%E6%83%85%E5%8F%B2%E9%A1%9E%E7%95%A5/original/13103.html
+009 第八卷　　情感類 file:///home/raylex/convertopenlittocantonese/%E6%83%85%E5%8F%B2%E9%A1%9E%E7%95%A5/original/13104.html
+010 第九卷　　情幻類 file:///home/raylex/convertopenlittocantonese/%E6%83%85%E5%8F%B2%E9%A1%9E%E7%95%A5/original/13105.html
+011 第十卷　　情靈類 file:///home/raylex/convertopenlittocantonese/%E6%83%85%E5%8F%B2%E9%A1%9E%E7%95%A5/original/13106.html
+012 第十一卷　　情化類 file:///home/raylex/convertopenlittocantonese/%E6%83%85%E5%8F%B2%E9%A1%9E%E7%95%A5/original/13107.html
+013 第十二卷　　情媒類 file:///home/raylex/convertopenlittocantonese/%E6%83%85%E5%8F%B2%E9%A1%9E%E7%95%A5/original/13108.html
+014 第十三卷　　情憾類 file:///home/raylex/convertopenlittocantonese/%E6%83%85%E5%8F%B2%E9%A1%9E%E7%95%A5/original/13109.html
+015 第十四卷　　情仇類 file:///home/raylex/convertopenlittocantonese/%E6%83%85%E5%8F%B2%E9%A1%9E%E7%95%A5/original/13110.html
+016 第十五卷　　情芽類 file:///home/raylex/convertopenlittocantonese/%E6%83%85%E5%8F%B2%E9%A1%9E%E7%95%A5/original/13111.html
+017 第十六卷　　情報類 file:///home/raylex/convertopenlittocantonese/%E6%83%85%E5%8F%B2%E9%A1%9E%E7%95%A5/original/13112.html
+018 第十七卷　　情穢類 file:///home/raylex/convertopenlittocantonese/%E6%83%85%E5%8F%B2%E9%A1%9E%E7%95%A5/original/13113.html
+019 第十八卷　　情累類 file:///home/raylex/convertopenlittocantonese/%E6%83%85%E5%8F%B2%E9%A1%9E%E7%95%A5/original/13114.html
+020 第十九卷　　情疑類 file:///home/raylex/convertopenlittocantonese/%E6%83%85%E5%8F%B2%E9%A1%9E%E7%95%A5/original/13115.html
+021 第二十卷　　情鬼類 file:///home/raylex/convertopenlittocantonese/%E6%83%85%E5%8F%B2%E9%A1%9E%E7%95%A5/original/13116.html
+022 第二十一卷　　情妖類 file:///home/raylex/convertopenlittocantonese/%E6%83%85%E5%8F%B2%E9%A1%9E%E7%95%A5/original/13117.html
+023 第二十二卷　　情外類 file:///home/raylex/convertopenlittocantonese/%E6%83%85%E5%8F%B2%E9%A1%9E%E7%95%A5/original/13118.html
+024 第二十三卷　　情通類 file:///home/raylex/convertopenlittocantonese/%E6%83%85%E5%8F%B2%E9%A1%9E%E7%95%A5/original/13119.html
+025 第二十四卷　　情跡類 file:///home/raylex/convertopenlittocantonese/%E6%83%85%E5%8F%B2%E9%A1%9E%E7%95%A5/original/13120.html

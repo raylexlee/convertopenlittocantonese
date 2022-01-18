@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+URLCHAPTER=${1?'missing chapter of open-lit book'}
+../getbwsk.js $URLCHAPTER | sed '/返回 開放文學/,$ d'

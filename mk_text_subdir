@@ -6,6 +6,10 @@ else
 echo the folder $BOOK does not exist!
 exit 1
 fi
+if [[ -d textdone ]]; then
+echo $BOOK done before!
+exit 2
+fi
 if [[ -d text ]]; then :; else  
   mkdir text
 fi  

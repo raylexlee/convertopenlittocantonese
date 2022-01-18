@@ -1,0 +1,12 @@
+000 本書說明 file:///home/raylex/convertopenlittocantonese/%E5%8D%97%E9%83%A8%E6%96%B0%E6%9B%B8/original/readme.html
+001 序 file:///home/raylex/convertopenlittocantonese/%E5%8D%97%E9%83%A8%E6%96%B0%E6%9B%B8/original/17593.html
+002 第一卷　　南部新書甲 file:///home/raylex/convertopenlittocantonese/%E5%8D%97%E9%83%A8%E6%96%B0%E6%9B%B8/original/17594.html
+003 第二卷　　南部新書乙 file:///home/raylex/convertopenlittocantonese/%E5%8D%97%E9%83%A8%E6%96%B0%E6%9B%B8/original/17595.html
+004 第三卷　　南部新書丙 file:///home/raylex/convertopenlittocantonese/%E5%8D%97%E9%83%A8%E6%96%B0%E6%9B%B8/original/17596.html
+005 第四卷　　南部新書丁 file:///home/raylex/convertopenlittocantonese/%E5%8D%97%E9%83%A8%E6%96%B0%E6%9B%B8/original/17597.html
+006 第五卷　　南部新書戊 file:///home/raylex/convertopenlittocantonese/%E5%8D%97%E9%83%A8%E6%96%B0%E6%9B%B8/original/17598.html
+007 第六卷　　南部新書己 file:///home/raylex/convertopenlittocantonese/%E5%8D%97%E9%83%A8%E6%96%B0%E6%9B%B8/original/17599.html
+008 第七卷　　南部新書庚 file:///home/raylex/convertopenlittocantonese/%E5%8D%97%E9%83%A8%E6%96%B0%E6%9B%B8/original/17600.html
+009 第八卷　　南部新書辛 file:///home/raylex/convertopenlittocantonese/%E5%8D%97%E9%83%A8%E6%96%B0%E6%9B%B8/original/17601.html
+010 第九卷　　南部新書壬 file:///home/raylex/convertopenlittocantonese/%E5%8D%97%E9%83%A8%E6%96%B0%E6%9B%B8/original/17602.html
+011 第十卷　　南部新書癸 file:///home/raylex/convertopenlittocantonese/%E5%8D%97%E9%83%A8%E6%96%B0%E6%9B%B8/original/17603.html

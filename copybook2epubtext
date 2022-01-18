@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+BOOK=${1?'missing book title'}
+if [[ -d $HOME/epub/text/$BOOK ]]; then :; else
+  mkdir $HOME/epub/text/$BOOK
+fi
+for i in $(ls [0-9]*txt)
+do
+sed '/^\ *$/ d' < $i > $HOME/epub/text/$BOOK/$i
+done
+cp coverparameters.txt $HOME/epub/text/$BOOK/
+[ -e author.txt ] && cp author.txt $HOME/epub/text/$BOOK/ 

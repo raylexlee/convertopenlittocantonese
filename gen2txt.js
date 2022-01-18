@@ -26,3 +26,5 @@ Chapters.forEach(Chapter => {
   paras.pop();                      
   fs.writeFileSync(`./text/${chapter}.txt`, paras.join('\n'));
 });
+const LastChapter = Chapters.pop();  
+console.log(LastChapter.substr(0, 3))

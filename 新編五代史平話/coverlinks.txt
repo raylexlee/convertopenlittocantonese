@@ -1,0 +1,10 @@
+000 本書說明 file:///home/raylex/convertopenlittocantonese/%E6%96%B0%E7%B7%A8%E4%BA%94%E4%BB%A3%E5%8F%B2%E5%B9%B3%E8%A9%B1/original/readme.html
+001 梁史平話　卷上 file:///home/raylex/convertopenlittocantonese/%E6%96%B0%E7%B7%A8%E4%BA%94%E4%BB%A3%E5%8F%B2%E5%B9%B3%E8%A9%B1/original/19022.html
+002 唐史平話　卷上 file:///home/raylex/convertopenlittocantonese/%E6%96%B0%E7%B7%A8%E4%BA%94%E4%BB%A3%E5%8F%B2%E5%B9%B3%E8%A9%B1/original/19023.html
+003 唐史平話　卷下 file:///home/raylex/convertopenlittocantonese/%E6%96%B0%E7%B7%A8%E4%BA%94%E4%BB%A3%E5%8F%B2%E5%B9%B3%E8%A9%B1/original/19024.html
+004 晉史平話　卷上 file:///home/raylex/convertopenlittocantonese/%E6%96%B0%E7%B7%A8%E4%BA%94%E4%BB%A3%E5%8F%B2%E5%B9%B3%E8%A9%B1/original/19025.html
+005 晉史平話　卷下 file:///home/raylex/convertopenlittocantonese/%E6%96%B0%E7%B7%A8%E4%BA%94%E4%BB%A3%E5%8F%B2%E5%B9%B3%E8%A9%B1/original/19026.html
+006 漢史平話　卷上 file:///home/raylex/convertopenlittocantonese/%E6%96%B0%E7%B7%A8%E4%BA%94%E4%BB%A3%E5%8F%B2%E5%B9%B3%E8%A9%B1/original/19027.html
+007 周史平話　卷上 file:///home/raylex/convertopenlittocantonese/%E6%96%B0%E7%B7%A8%E4%BA%94%E4%BB%A3%E5%8F%B2%E5%B9%B3%E8%A9%B1/original/19028.html
+008 周史平話　卷下 file:///home/raylex/convertopenlittocantonese/%E6%96%B0%E7%B7%A8%E4%BA%94%E4%BB%A3%E5%8F%B2%E5%B9%B3%E8%A9%B1/original/19029.html
+009 跋 file:///home/raylex/convertopenlittocantonese/%E6%96%B0%E7%B7%A8%E4%BA%94%E4%BB%A3%E5%8F%B2%E5%B9%B3%E8%A9%B1/original/19030.html

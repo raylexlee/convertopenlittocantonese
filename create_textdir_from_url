@@ -26,10 +26,21 @@ if [[ -n $MISSING_XCANGJIE_IN_XTEXT ]]; then
    live-server
    exit 1
 fi   
-node ../gen2txt.js
+echo $(node ../gen2txt.js) > text/last_chapter.txt
 awk '{printf("%s %s%s\n", $1, $4,$5);}' < coverparameters.txt > text/coverparameters.txt
-$HOME/text2data
-$HOME/text2mini
-$HOME/text2raylexdebian
-$HOME/text2hanley
-
+cp author.txt text/
+cd text
+BOOK=$TITLE
+if [[ -d $HOME/epub/text/$BOOK ]]; then :; else
+  mkdir $HOME/epub/text/$BOOK
+fi
+if [[ -d $HOME/epub/audio/$BOOK ]]; then :; else
+  mkdir $HOME/epub/audio/$BOOK
+fi
+for i in $(ls [0-9]*txt)
+do
+sed '/^\ *$/ d' < $i > $HOME/epub/text/$BOOK/$i
+done
+cp coverparameters.txt $HOME/epub/text/$BOOK/
+cp last_chapter.txt $HOME/epub/text/$BOOK/
+cp author.txt $HOME/epub/text/$BOOK/

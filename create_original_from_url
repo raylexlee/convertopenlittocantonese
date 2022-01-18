@@ -1,0 +1,15 @@
+#!/bin/bash
+[ -e book.html ] && rm book.html
+BOOK_URL=${1?"missing link from http://open-lit.com"}
+curl -o book.html $BOOK_URL
+TITLE=$(grep html版 book.html | sed 's/^.*blank">\(.*\)<\/a>.*$/\1/' | tr -d [:space:])
+BOOKZIP_URL=$(grep 下載本書html book.html | sed 's/^.*href="\([^"]*\)".*$/\1/')
+mkdir $TITLE
+cd $TITLE
+mkdir original
+mkdir text
+curl -o lit.zip $BOOKZIP_URL
+cd original
+unzip ../lit.zip
+rm ../lit.zip
+echo $(grep "作者：<br>" readme.html | sed 's/.*作者：<br>　　\([^，。]*\).*/\1/') > ../author.txt

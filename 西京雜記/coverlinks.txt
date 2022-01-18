@@ -1,0 +1,7 @@
+000 本書說明 file:///home/raylex/convertopenlittocantonese/%E8%A5%BF%E4%BA%AC%E9%9B%9C%E8%A8%98/original/readme.html
+001 第一卷 file:///home/raylex/convertopenlittocantonese/%E8%A5%BF%E4%BA%AC%E9%9B%9C%E8%A8%98/original/12971.html
+002 第二卷 file:///home/raylex/convertopenlittocantonese/%E8%A5%BF%E4%BA%AC%E9%9B%9C%E8%A8%98/original/12972.html
+003 第三卷 file:///home/raylex/convertopenlittocantonese/%E8%A5%BF%E4%BA%AC%E9%9B%9C%E8%A8%98/original/12973.html
+004 第四卷 file:///home/raylex/convertopenlittocantonese/%E8%A5%BF%E4%BA%AC%E9%9B%9C%E8%A8%98/original/12974.html
+005 第五卷 file:///home/raylex/convertopenlittocantonese/%E8%A5%BF%E4%BA%AC%E9%9B%9C%E8%A8%98/original/12975.html
+006 第六卷 file:///home/raylex/convertopenlittocantonese/%E8%A5%BF%E4%BA%AC%E9%9B%9C%E8%A8%98/original/12976.html

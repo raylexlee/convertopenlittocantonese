@@ -1,0 +1,16 @@
+000 本書說明 file:///home/raylex/convertopenlittocantonese/%E5%85%A8%E7%9B%B8%E5%B9%B3%E8%A9%B1/original/readme.html
+001 武王伐紂書卷上 file:///home/raylex/convertopenlittocantonese/%E5%85%A8%E7%9B%B8%E5%B9%B3%E8%A9%B1/original/6221.html
+002 武王伐紂書卷中 file:///home/raylex/convertopenlittocantonese/%E5%85%A8%E7%9B%B8%E5%B9%B3%E8%A9%B1/original/6222.html
+003 武王伐紂書卷下 file:///home/raylex/convertopenlittocantonese/%E5%85%A8%E7%9B%B8%E5%B9%B3%E8%A9%B1/original/6223.html
+004 樂毅圖齊七國春秋後集卷上 file:///home/raylex/convertopenlittocantonese/%E5%85%A8%E7%9B%B8%E5%B9%B3%E8%A9%B1/original/6224.html
+005 樂毅圖齊七國春秋後集卷中 file:///home/raylex/convertopenlittocantonese/%E5%85%A8%E7%9B%B8%E5%B9%B3%E8%A9%B1/original/6225.html
+006 樂毅圖齊七國春秋後集卷下 file:///home/raylex/convertopenlittocantonese/%E5%85%A8%E7%9B%B8%E5%B9%B3%E8%A9%B1/original/6226.html
+007 秦併六國平話卷上 file:///home/raylex/convertopenlittocantonese/%E5%85%A8%E7%9B%B8%E5%B9%B3%E8%A9%B1/original/6227.html
+008 秦併六國平話卷中 file:///home/raylex/convertopenlittocantonese/%E5%85%A8%E7%9B%B8%E5%B9%B3%E8%A9%B1/original/6228.html
+009 秦併六國平話卷下 file:///home/raylex/convertopenlittocantonese/%E5%85%A8%E7%9B%B8%E5%B9%B3%E8%A9%B1/original/6229.html
+010 前漢書續集卷上 file:///home/raylex/convertopenlittocantonese/%E5%85%A8%E7%9B%B8%E5%B9%B3%E8%A9%B1/original/6230.html
+011 前漢書續集卷中 file:///home/raylex/convertopenlittocantonese/%E5%85%A8%E7%9B%B8%E5%B9%B3%E8%A9%B1/original/6231.html
+012 前漢書續集卷下 file:///home/raylex/convertopenlittocantonese/%E5%85%A8%E7%9B%B8%E5%B9%B3%E8%A9%B1/original/6232.html
+013 三國志平話卷上 file:///home/raylex/convertopenlittocantonese/%E5%85%A8%E7%9B%B8%E5%B9%B3%E8%A9%B1/original/6233.html
+014 三國志平話卷中 file:///home/raylex/convertopenlittocantonese/%E5%85%A8%E7%9B%B8%E5%B9%B3%E8%A9%B1/original/6234.html
+015 三國志平話卷下 file:///home/raylex/convertopenlittocantonese/%E5%85%A8%E7%9B%B8%E5%B9%B3%E8%A9%B1/original/6235.html

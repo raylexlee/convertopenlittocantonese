@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+BOOK=${1?'missing book name ...'}
+cd $BOOK
+[ -d text ] || mkdir text
+../gethtml_links.js file://$(pwd)/original/index.html | grep original \
+ | sed 's/<.*>//g' | nl -n rz -w 3 -v 0 -s " " > coverlinks.txt
+awk '{printf("../getlocalopenlitchapter %s > %s.txt\n", $3, $1);}' < coverlinks.txt > raylex.sh
+awk '{print $1,$2;}' < coverlinks.txt > coverparameters.txt
+bash raylex.sh
+../copybook2epubtext $BOOK
+echo $BOOK $(date)
